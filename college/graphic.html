@@ -6,28 +6,80 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script>
-   function draw(){
-  
-    var canvas=document.getElementById('myCanvas');
-    var context=canvas.getContext('2d');
-    context.strokeStyle="red";
-    context.fillStyle="blue";
-    context.fillRect(10,10,100,100);
-    context.strokeRect(10,10,100,100);
 
+     <!-- <script>
+
+        function draw(){
+   
+         var canvas=document.getElementById("myCanvas");
+         var context=canvas.getContext("2d");
+         var grd=context.createLinearGradient(0,0,175,50);
+         grd.addColorStop(0,"#FF0000");
+         grd.addColorStop(1,"#00FF00");
+         context.fillStyle=grd;
+         context.fillRect(-100,-1,400,500);
+        
+           }
+
+
+     </script> -->
+
+  <!-- <script>
+
+   if(sessionStorage.hits){
+       sessionStorage.hits=Number(sessionStorage.hits)+1;
+   }
+   else{
+       sessionStorage.hits=1;
 
    }
 
+   document.write("Total Hits are : "+sessionStorage.hits); -->
+
+   <script>
+    if(localStorage.hits){
+        localStorage.hits=Number(localStorage.hits  )+1;
+
+    }
+    else{
+        localStorage.hits=1;
+    }
+    document.write("Total hits are: "+localStorage.hits);
 
 
-    </script>
+
+
+
+   </script>
+  
+
+
+
+  </script>
+
+
+
+
+
 </head>
-<body>
-<div width="50" height="60" id="myCanvas">
 
-</div>
+
+
+
+<body>
+
+
+<canvas    id="myCanvas" >
+
+</canvas>
+
+
+<script>
     
+    draw()
+ 
+ 
+     </script>
     
 </body>
 </html>
