@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width initial-scale=1.0 ">
+    <!-- <meta name="viewport" content="width=device-width initial-scale=1.0 "> -->
+    
+   <title> Week-3 </title>
+   <script type="text/javascript">
+
+    function mixup(){
+     
+        var str1=document.getElementById("str1").value;
+        var str2=document.getElementById("str2").value;
+
+        document.write(str2.slice(0,2)+str1.slice(2) +  "     " + " "+ str1.slice(0,2)+str2.slice(2)  );
+
+      alert(str2.slice(0,2)+str1.slice(2) +  "     " + " "+ str1.slice(0,2)+str2.slice(2) );
+
+
+
+
+
+
+    }
+
+
+
+
+   </script>
+       
+    
+
+    
+    
+
+</head>
+<body>
+
+
+
+<form id="form">
+
+
+ <label for="str1">Enter the first string</label>
+ <input type="text" id="str1" name="str1">
+ <br>
+ <br>
+ <label for="str2">Enter the second string </label>
+ <input type="text" id="str2" name="str2">
+
+ <br>
+ <input type="submit" onclick="mixup()">
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

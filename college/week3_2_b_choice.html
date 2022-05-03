@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+
+
+
+
+<title>week3</title>
+
+</head>
+
+
+<body>
+
+    <div id="choices "> </div>
+    <script>
+
+    
+        var n=parseInt(prompt("enter the number of choices : " ,"3"));
+
+        var arr=[];
+
+        for(let i=0;i<n;i++){
+            let x=prompt( `enter your choice ${i}`)
+            arr.push(x);
+        }
+
+        var suf="";
+
+        for(let i=0; i<n ;i++){
+
+            if( (i+1)%10==1 &&(i+1)!=11 ){
+                suf="st";
+            } 
+            else if(  (i+1)%10==2 && (i+1)!=12   )   {
+                suf="nd";
+            }
+            else if(  (i+1)%1==3 && (i+1)!=13    ){
+                 suf="th";
+            }
+            else{
+                suf="th";
+            }
+
+           
+             
+            document.write(" my "+(i+1) + suf + "choice is " +arr[i]         );
+            document.write("<br>");
+            
+
+
+
+        }
+
+
+
+
+
+    </script>
+</body>

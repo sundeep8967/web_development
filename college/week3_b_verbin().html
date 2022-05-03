@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width initial-scale=1.0 ">
+
+<title>Week3_verbing</title>
+
+
+
+
+<script type="text/javascript">
+
+    function verb()
+    {
+  var str1=document.getElementById("id1").value;
+
+  if(str1.length<3){
+    document.write(str1);
+  }
+  else{
+    
+    if(str1.length>=3 && str1.slice(-3)=="ing"  ){
+        document.write(    str1+"ly"     );
+
+        
+    }
+    else
+    document.write(str1+"ing");
+ 
+
+  }
+
+
+    }
+</script>
+</head>
+
+<body>
+
+<form id="form">
+
+    <label for="id1">Enter the string</label>
+    
+    <input type="text" id="id1" name="id1">
+    
+    <input type="submit" onclick="verb()" >  
+    
+
+
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>week3_4</title>
+
+
+</head>
+<body>
+    <div class="form">
+
+
+        <label for="hometown" >Enter your home town</label>
+        <input type="text" id="hometown"  >
+       <br>
+        <label for="age">Age</label>
+        <input type="text" id="age">
+ <br>
+        
+ 
+        <input type="submit" onclick="hometown()"> 
+         <br>   
+        
+         <div id="data"></div>
+        
+         <a href="" id="link">hometown</a>
+
+     
+    </div>
+
+
+    <script type=  "text/javascript"  > 
+        
+        function hometown(){
+
+        var hometown=document.getElementById("hometown").value;
+        var age=document.getElementById("age").value;
+        var dob=2022-parseInt(age);
+        //document.write(age +" " +"dob:"+dob);
+        //document.write("<br>");
+        //document.write(hometown);
+
+        
+        var link="https://www.google.com/maps/place/"+ hometown;
+         
+        
+        document.getElementById("link").setAttribute("href",link);
+        document.getElementById("data").innerText= age+ " "+"dob : "+dob;
+                
+
+                                                                   
+        }
+
+    
+    </script>
+    
+
+
+
+
+</body>
+
+
+</html>

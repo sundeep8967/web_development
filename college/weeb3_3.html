@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Week3_3</title>
+
+</head>
+
+<body>
+
+<form action="">
+
+
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required placeholder="Enter your name here">
+
+<br><br>
+
+<label for="uname">username</label>
+<input type="text" id="uname" name="uname" required placeholder="Enter username">
+
+<br><br>
+
+<label for="psd">password</label>
+<input type="password" id="psd" name="psd" required>
+
+<br><br>
+
+<label for="vpsd">confirm password </label>
+<input type="password" id="vpsd" name="vpsd" required>
+
+<br><br>
+
+<label for="date">Year Of Birth</label>
+<input type="text" id="date" name="date" required>
+
+<br><br>
+
+
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email" required>
+
+
+
+<input type="submit" onclick="validate()">
+
+
+</form>
+
+
+
+
+<script type="text/javascript">
+
+
+
+    function validate(){
+
+    let name=document.getElementById("name").value;
+    let uname=document.getElementById("uname").value;
+    let pass=document.getElementById("psd").value;
+    let vpass=document.getElementById("vpsd").value;
+    let datea=document.getElementById("date").value;
+    let emaill=document.getElementById("email").value;
+
+
+   
+
+
+
+    
+     if( pass == vpass) {
+        if(parseInt(datea)>=1800 && parseInt(datea)<=2000){
+            document.write("successfull");
+        }
+
+        else{
+            document.write("enter year correctly ");
+
+        }
+     }
+     else{
+         document.write("password and confirm password does not match");
+     }
+
+    }
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
